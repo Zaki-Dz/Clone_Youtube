@@ -1,0 +1,28 @@
+// import variables
+@use 'inc/variables' as *;
+
+// import default rules
+@import 'inc/default';
+
+// import mixins
+@import 'inc/mixins';
+
+// import container
+@import 'inc/container';
+
+// import header
+@import 'inc/header';
+
+// import side menu
+@import 'inc/side_menu';
+
+// import videos
+@import 'inc/content';
+
+::-webkit-scrollbar {
+	width: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 0.5rem;
+}

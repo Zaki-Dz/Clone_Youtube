@@ -1,0 +1,41 @@
+.content {
+	position: absolute;
+	top: 63px;
+	right: 0;
+	width: calc(100% - 250px);
+	padding: 1rem;
+
+	.videos {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		gap: 2rem 1rem;
+
+		.video {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+
+			.infos {
+				display: flex;
+				gap: 0.5rem;
+
+				& > span {
+					color: red;
+					font-size: 2rem;
+				}
+
+				.details {
+					display: flex;
+					flex-direction: column;
+					font-size: 0.7rem;
+
+					.title {
+						font-weight: bold;
+						font-size: 0.9rem;
+						margin-bottom: 0.5rem;
+					}
+				}
+			}
+		}
+	}
+}

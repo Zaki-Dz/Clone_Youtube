@@ -1,0 +1,60 @@
+aside {
+	position: fixed;
+	top: 63px;
+	left: 0;
+	border-right: 1px solid $lightGrey;
+	width: 250px;
+	height: calc(100vh - 63px);
+	background-color: white;
+	overflow-y: auto;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	&:hover {
+		&::-webkit-scrollbar {
+			display: block;
+		}
+	}
+
+	nav {
+		& > div {
+			border-bottom: 1px solid $lightGrey;
+			display: flex;
+			flex-direction: column;
+			padding: 0.5rem 0;
+
+			.link {
+				padding: 0.5rem 0 0.5rem 2rem;
+				display: flex;
+				align-items: center;
+				font-size: 0.8rem;
+
+				&:hover {
+					background-color: $lighterGrey;
+				}
+
+				& > :first-child {
+					width: 2.5rem;
+				}
+			}
+		}
+
+		.bottom {
+			border: 0;
+
+			h3 {
+				text-transform: uppercase;
+				font-size: 0.8rem;
+				padding: 0.5rem 0 0.5rem 2rem;
+			}
+
+			.link {
+				:first-child {
+					color: red;
+				}
+			}
+		}
+	}
+}
